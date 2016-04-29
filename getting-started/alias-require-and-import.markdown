@@ -74,6 +74,16 @@ end
 
 In the example above, since we are invoking `alias` inside the function `plus/2`, the alias will just be valid inside the function `plus/2`. `minus/2` won't be affected at all.
 
+You can also declare multiple aliases in one line:
+
+```elixir
+alias YourApp.{Model, View, Controller}
+# is the same as:
+# alias YourApp.Model
+# alias YourApp.View
+# alias YourApp.Controller
+```
+
 ## require
 
 Elixir provides macros as a mechanism for meta-programming (writing code that generates code).
